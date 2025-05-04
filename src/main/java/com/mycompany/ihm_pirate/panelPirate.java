@@ -43,7 +43,7 @@ public class PanelPirate extends javax.swing.JPanel {
             @Override
             public void mouseEntered(MouseEvent e) {
                 if(!estClique){
-                    setBorder(new LineBorder(Color.BLUE, 2));
+                    setBorder(new LineBorder(Color.ORANGE, 10));
                 }
                  
                 repaint();
@@ -82,7 +82,7 @@ public class PanelPirate extends javax.swing.JPanel {
         });
     }
     
-    public static void setDescriptionLabels(JLabel leftLabel, JLabel rightLabel) {
+    public static void setupLabelsDescription(JLabel leftLabel, JLabel rightLabel) {
         leftDescriptionLabel = leftLabel;
         rightDescriptionLabel = rightLabel;
     }
@@ -103,7 +103,7 @@ public class PanelPirate extends javax.swing.JPanel {
         estClique = false;
     }
     private void setSelection() {
-        setBorder(BorderFactory.createLineBorder(Color.GREEN, 2));
+        setBorder(BorderFactory.createLineBorder(Color.GREEN, 10));
         estClique = true;
     }
     
