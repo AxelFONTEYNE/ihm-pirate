@@ -4,34 +4,17 @@
  */
 package com.mycompany.ihm_pirate;
 
-import java.awt.Graphics;
-import java.awt.Image;
-import javax.swing.ImageIcon;
-import java.net.URL;
-import javax.imageio.ImageIO;
-import java.io.*;
 /**
  *
- * @author FNX4294A
+ * @author Fonteyne
  */
-public class PanelPlateau extends javax.swing.JPanel {
+public class PanelImage extends javax.swing.JPanel {
 
-    private Image image;
-    
-    public PanelPlateau(){
-        String local_path = System.getProperty("user.dir");
-        File image_path = new File(local_path+"/images/plateau.jpg");
-        try {
-            image = ImageIO.read(image_path);
-        } catch (IOException io) {
-            System.out.println("Error");
-        }
-    }
-    
-    @Override
-    protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
-        g.drawImage(image, 0, 0, getWidth(), getHeight(), this);
+    /**
+     * Creates new form PanelImage
+     */
+    public PanelImage() {
+        initComponents();
     }
 
     /**
